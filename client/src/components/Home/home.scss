@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@mixin button {
+  color: white;
+  background: black;
+}
+.container {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.activation-text {
+  font-size: 1.2em;
+  margin-top: 2%;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  //   justify-content: center;
+  gap: 3%;
+}
+.button {
+  margin-top: 20%;
+  font-size: 1.2em;
+  padding: 0.5% 3%;
+  min-width: 5em;
+  min-height: 2em;
+  font-family: "Roboto Condensed", sans-serif;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  background: transparent;
+  transition: all 0.3s linear;
+
+  &:nth-of-type(1) {
+    @include button();
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:nth-of-type(2):hover {
+    @include button();
+  }
+}
+
+.list {
+  margin-top: 5%;
+  text-align: center;
+  list-style-type: decimal;
+}

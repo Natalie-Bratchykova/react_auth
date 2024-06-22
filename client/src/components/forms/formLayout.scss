@@ -1,0 +1,15 @@
+.form__layout {
+  display: flex;
+  padding-left: 2%;
+  padding-top: 5%;
+  justify-content: space-between;
+
+  .layout__image {
+    max-width: 30%;
+    // background: linear-gradient(purple, pink);
+    img {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+}
